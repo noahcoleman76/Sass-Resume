@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+<!--JS-->
+<script src="script.js"></script>
+
+<!-- End JS-->
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="portfolioLogo.png">
+        </div>
+        <div class="header-menu">
+            <li class="header-menu-item">Home</li>
+            <li class="header-menu-item">About</li>
+            <li class="header-menu-item">Portfolio</li>
+            <li class="header-menu-item">Pricing</li>
+        </div>
+        <button class="contact">Contact Us</button>
+    </div>
+
+
+    <!-- main body: -->
+
+
+    <div class="main-body">
+        <div class="left-side">
+            <div class="left-side-top">
+                <img id="heart" src="heart.png">
+                <p id="speed">Speed Up <br>Communications</p>
+                <p id="hi">Hi, I'm Noah Coleman</p>
+                <p id="cd">Coleman Development is the perfect place for everything related
+                    to a project, to-do-list, or communication. 
+                </p>
+                <button id="hire">Hire Me</button>
+            </div>
+            <div class="left-side-bottom">
+                <a href="instagram.com"><img id="social" src="instagram.png"></a>
+                <a href="twitter.com"><img id="social" src="twitter.jpeg"></a>
+                <a href="facebook.com"><img id="social" src="facebook.jpeg"></a>
+            </div>
+            <a href="#recent"><img class="arrow" src="arrow.png"></a>
+        </div>
+        <div class="right-side">
+            <div class="right-side-left">
+                <div id="stats">
+                    <span style="display: flex; align-items: center;"><img id="heart" src="heart.png">
+                    <h1 id="great" style="font-size: 18px; margin: 0px;">Great Project</h1></span>
+                    <p id="done">212+ Done</p>
+                    <p id="days"><span style="color: rgb(34, 207, 34);">2.1%</span> vs last 7 days</p>
+                </div>
+            </div>
+            <div class="right-side-right">
+                <h1 id="user">&#128269 User Research</h1>
+                <h1 id="ui">&#128993 UI Designer</h1>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Video Popup -->
+    <div class="bottom-section">
+    <h1 id="recent">Take a look at my most recent project</h1>
+
+    <div id="light">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+      <video id="VisaChipCardVideo" width="600" controls>
+          <source src="trailer.mp4" type="video/mp4">
+          <!--Browser does not support <video> tag -->
+        </video>
+    </div>
+    
+    <div id="fade" onClick="lightbox_close();"></div>
+    
+    <div class="video-button">
+      <a class="play" href="#" onclick="lightbox_open();"><img id="press"  src="play.png"></a>
+    </div>
+    </div>
+</body>
+</html>
